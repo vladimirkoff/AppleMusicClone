@@ -1,8 +1,8 @@
 //
-//  InitialViewController.swift
+//  LibraryVC.swift
 //  AppleMusicClone
 //
-//  Created by Vladimir Kovalev on 24.04.2023.
+//  Created by Vladimir Kovalev on 25.04.2023.
 //
 
 import UIKit
@@ -10,12 +10,13 @@ import UIKit
 private let reuseIdentfier = "RecentSongCell"
 private let headerReuseIdentifier = "RecentSongsHeader"
 
-class InitialViewController: UICollectionViewController {
+class LibraryVC: UICollectionViewController {
     //MARK: - Properties
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+
         configureCollectionView()
         configureNavController()
     }
@@ -58,7 +59,7 @@ class InitialViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerReuseIdentifier, for: indexPath) as! RecentSongHeader
-        header.backgroundColor = .darkGray
+        header.backgroundColor = .black
         return header
     }
     
@@ -70,7 +71,7 @@ class InitialViewController: UICollectionViewController {
     
 }
 
-extension InitialViewController: UICollectionViewDelegateFlowLayout {
+extension LibraryVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let size = CGSize(width: 175, height: 220)
         return size
@@ -84,7 +85,8 @@ extension InitialViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: view.frame.width, height: 500)
+        return CGSize(width: view.frame.width, height: 450)
     }
 
 }
+

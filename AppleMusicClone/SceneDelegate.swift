@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let scene = (scene as? UIWindowScene) else { return }
         
-        let initialVC = UINavigationController(rootViewController: InitialViewController(collectionViewLayout: UICollectionViewFlowLayout()))
+        let initialVC = UINavigationController(rootViewController: InitialTabController(scene: scene))
         
         window = UIWindow(windowScene: scene)
         window?.rootViewController = initialVC

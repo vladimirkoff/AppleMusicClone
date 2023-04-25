@@ -10,7 +10,7 @@ import UIKit
 class OptionCell: UITableViewCell {
     //MARK: - Proeprties
     
-   private let optionImage: UIImageView = {
+    var optionImage: UIImageView = {
         let iv = UIImageView()
         iv.translatesAutoresizingMaskIntoConstraints = false
         iv.contentMode = .scaleAspectFit
@@ -19,7 +19,7 @@ class OptionCell: UITableViewCell {
         return iv
     }()
     
-   private let optionName: UILabel = {
+    var optionName: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .white
@@ -35,7 +35,8 @@ class OptionCell: UITableViewCell {
         
         addSubview(optionImage)
         optionImage.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 2).isActive = true
-        optionImage.heightAnchor.constraint(equalToConstant: self.frame.width / 3 - 4).isActive = true
+        optionImage.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        optionImage.heightAnchor.constraint(equalToConstant: 40).isActive = true
         optionImage.widthAnchor.constraint(equalToConstant: 40).isActive = true
         
         addSubview(optionName)

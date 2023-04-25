@@ -14,7 +14,15 @@ class RecentSongHeader: UICollectionReusableView {
     
     private var tableView = UITableView()
     
-
+    private let label: UILabel = {
+        let label = UILabel()
+        label.text = "Recently Added"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .white
+        label.font = UIFont.boldSystemFont(ofSize: 26)
+        return label
+    }()
+    
     
     //MARK: - Lifecycle
     
@@ -22,8 +30,10 @@ class RecentSongHeader: UICollectionReusableView {
         super.init(frame: frame)
         addSubview(tableView)
         
-
-        
+        addSubview(label)
+        label.topAnchor.constraint(equalTo: tableView.bottomAnchor, constant: 18).isActive = true
+        label.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 8).isActive = true
+    
         configureTableView()
     }
     
@@ -43,7 +53,7 @@ class RecentSongHeader: UICollectionReusableView {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
         tableView.widthAnchor.constraint(equalToConstant: self.frame.width).isActive = true
-        tableView.heightAnchor.constraint(equalToConstant: self.frame.height).isActive = true
+        tableView.heightAnchor.constraint(equalToConstant: self.frame.height - 50).isActive = true
     }
     
 }
@@ -53,6 +63,8 @@ extension RecentSongHeader: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "OptionCell", for: indexPath) as! OptionCell
         cell.backgroundColor = .black
         cell.accessoryType = .disclosureIndicator
+        cell.optionImage.image = Options.optionImages[indexPath.row]
+        cell.optionName.text = Options.optionNames[indexPath.row]
         return cell
     }
     
@@ -61,7 +73,7 @@ extension RecentSongHeader: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let height: CGFloat = self.frame.height / 6
+        let height: CGFloat = (self.frame.height - 50) / 6
         return height
     }
 }
