@@ -50,7 +50,7 @@ class InitialTabController: UITabBarController {
         let radioVC = RadioVC()
         let radio = templateNavController(image: UIImage(systemName: "dot.radiowaves.left.and.right")!, rootVC: radioVC)
         
-        let searchVC = SearchVC()
+        let searchVC = SongVC()
         let search = templateNavController(image: UIImage(systemName: "magnifyingglass")!, rootVC: searchVC)
                         
         

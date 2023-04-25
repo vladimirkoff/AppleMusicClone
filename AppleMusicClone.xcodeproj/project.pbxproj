@@ -23,6 +23,8 @@
 		85BE5FD029F7E8850052A281 /* BrowseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE5FCF29F7E8850052A281 /* BrowseVC.swift */; };
 		85BE5FD229F7E8970052A281 /* ExploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE5FD129F7E8970052A281 /* ExploreVC.swift */; };
 		85BE5FD629F7F6C20052A281 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE5FD529F7F6C20052A281 /* Option.swift */; };
+		85BE5FD829F7FB170052A281 /* SongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE5FD729F7FB170052A281 /* SongVC.swift */; };
+		85BE5FDE29F7FF800052A281 /* miley-cyrus-flowers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 85BE5FDD29F7FF800052A281 /* miley-cyrus-flowers.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		85BE5FCF29F7E8850052A281 /* BrowseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseVC.swift; sourceTree = "<group>"; };
 		85BE5FD129F7E8970052A281 /* ExploreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreVC.swift; sourceTree = "<group>"; };
 		85BE5FD529F7F6C20052A281 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		85BE5FD729F7FB170052A281 /* SongVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongVC.swift; sourceTree = "<group>"; };
+		85BE5FDD29F7FF800052A281 /* miley-cyrus-flowers.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "miley-cyrus-flowers.mp3"; path = "../../../../Downloads/miley-cyrus-flowers.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +80,14 @@
 		85143C7429F6C16100046154 /* AppleMusicClone */ = {
 			isa = PBXGroup;
 			children = (
+				85BE5FDF29F809C00052A281 /* API */,
 				85143C8F29F6C1B100046154 /* ViewModel */,
 				85143C8E29F6C1AB00046154 /* View */,
 				85143C8C29F6C19800046154 /* Model */,
 				85143C7529F6C16100046154 /* AppDelegate.swift */,
 				85143C7729F6C16100046154 /* SceneDelegate.swift */,
 				85143C7B29F6C16100046154 /* Main.storyboard */,
+				85BE5FDD29F7FF800052A281 /* miley-cyrus-flowers.mp3 */,
 				85143C8129F6C16200046154 /* Assets.xcassets */,
 				85143C8329F6C16200046154 /* LaunchScreen.storyboard */,
 				85143C8629F6C16200046154 /* Info.plist */,
@@ -125,8 +131,16 @@
 				85BE5FCD29F7E8780052A281 /* RadioVC.swift */,
 				85BE5FCF29F7E8850052A281 /* BrowseVC.swift */,
 				85BE5FD129F7E8970052A281 /* ExploreVC.swift */,
+				85BE5FD729F7FB170052A281 /* SongVC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		85BE5FDF29F809C00052A281 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +204,7 @@
 				85143C8529F6C16200046154 /* LaunchScreen.storyboard in Resources */,
 				85143C8229F6C16200046154 /* Assets.xcassets in Resources */,
 				85143C7D29F6C16100046154 /* Main.storyboard in Resources */,
+				85BE5FDE29F7FF800052A281 /* miley-cyrus-flowers.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +220,7 @@
 				85143C8029F6C16100046154 /* AppleMusicClone.xcdatamodeld in Sources */,
 				85143C9929F6DEDC00046154 /* OptionCell.swift in Sources */,
 				85BE5FD029F7E8850052A281 /* BrowseVC.swift in Sources */,
+				85BE5FD829F7FB170052A281 /* SongVC.swift in Sources */,
 				85BE5FCA29F7E83A0052A281 /* SearchVC.swift in Sources */,
 				85BE5FCC29F7E8670052A281 /* LibraryVC.swift in Sources */,
 				85BE5FD629F7F6C20052A281 /* Option.swift in Sources */,
