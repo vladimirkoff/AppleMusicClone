@@ -13,26 +13,26 @@ private let headerReuseIdentifier = "RecentSongsHeader"
 class LibraryVC: UICollectionViewController {
     //MARK: - Properties
     
-//   lazy private var songBar: UIView = {
-//        let view = UIView()
-//        view.backgroundColor = .white
-//        view.translatesAutoresizingMaskIntoConstraints = false
-//        view.heightAnchor.constraint(equalToConstant: 80).isActive = true
-//        view.widthAnchor.constraint(equalToConstant: view.frame.width).isActive = true
-//        view.bottomAnchor.constraint(equalTo: self.tabBarController!.tabBar.topAnchor, constant: 0).isActive = true
-//        view.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-//        return view
-//    }()
+    //   lazy private var songBar: UIView = {
+    //        let view = UIView()
+    //        view.backgroundColor = .white
+    //        view.translatesAutoresizingMaskIntoConstraints = false
+    //        view.heightAnchor.constraint(equalToConstant: 80).isActive = true
+    //        view.widthAnchor.constraint(equalToConstant: view.frame.width).isActive = true
+    //        view.bottomAnchor.constraint(equalTo: self.tabBarController!.tabBar.topAnchor, constant: 0).isActive = true
+    //        view.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+    //        return view
+    //    }()
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        
         configureCollectionView()
         configureNavController()
         
-
+        
     }
     
     //MARK: - Helpers
@@ -73,15 +73,13 @@ class LibraryVC: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
-            
-            
-            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerReuseIdentifier, for: indexPath) as! RecentSongHeader
-            header.backgroundColor = .black
-            return header
-            
-
         
-
+        
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerReuseIdentifier, for: indexPath) as! RecentSongHeader
+        header.backgroundColor = .black
+        return header
+        
+        
     }
     
     
@@ -94,7 +92,7 @@ class LibraryVC: UICollectionViewController {
     
     //MARK: - Selectors
     
-   @objc func editSelection() {
+    @objc func editSelection() {
         print("Edit")
     }
     
@@ -106,8 +104,8 @@ extension LibraryVC: UICollectionViewDelegateFlowLayout {
         return size
     }
     
-   
-
+    
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         let space: CGFloat = 15
         return space
@@ -116,7 +114,7 @@ extension LibraryVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize(width: view.frame.width, height: 450)
     }
-
-
+    
+    
 }
 

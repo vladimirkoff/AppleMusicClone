@@ -26,6 +26,8 @@
 		85BE5FD829F7FB170052A281 /* SongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE5FD729F7FB170052A281 /* SongVC.swift */; };
 		85BE5FDE29F7FF800052A281 /* miley-cyrus-flowers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 85BE5FDD29F7FF800052A281 /* miley-cyrus-flowers.mp3 */; };
 		85EA5C8429F91277007D5876 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA5C8329F91277007D5876 /* Extensions.swift */; };
+		85EA5C8829F92A62007D5876 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA5C8729F92A62007D5876 /* SearchCell.swift */; };
+		85EA5C8A29F92A7A007D5876 /* SearchVCHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA5C8929F92A7A007D5876 /* SearchVCHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		85BE5FD729F7FB170052A281 /* SongVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongVC.swift; sourceTree = "<group>"; };
 		85BE5FDD29F7FF800052A281 /* miley-cyrus-flowers.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "miley-cyrus-flowers.mp3"; path = "../../../../Downloads/miley-cyrus-flowers.mp3"; sourceTree = "<group>"; };
 		85EA5C8329F91277007D5876 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		85EA5C8729F92A62007D5876 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		85EA5C8929F92A7A007D5876 /* SearchVCHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVCHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 				85143C9429F6C67600046154 /* RecentSongsHeader.swift */,
 				85143C9629F6C7A500046154 /* RecentSongCell.swift */,
 				85143C9829F6DEDC00046154 /* OptionCell.swift */,
+				85EA5C8729F92A62007D5876 /* SearchCell.swift */,
+				85EA5C8929F92A7A007D5876 /* SearchVCHeader.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -226,7 +232,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85EA5C8A29F92A7A007D5876 /* SearchVCHeader.swift in Sources */,
 				85BE5FCE29F7E8780052A281 /* RadioVC.swift in Sources */,
+				85EA5C8829F92A62007D5876 /* SearchCell.swift in Sources */,
 				85143C9529F6C67600046154 /* RecentSongsHeader.swift in Sources */,
 				85143C8029F6C16100046154 /* AppleMusicClone.xcdatamodeld in Sources */,
 				85143C9929F6DEDC00046154 /* OptionCell.swift in Sources */,

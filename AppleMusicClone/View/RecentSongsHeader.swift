@@ -49,7 +49,6 @@ class RecentSongHeader: UICollectionReusableView {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorColor = .lightGray
-        
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
         tableView.widthAnchor.constraint(equalToConstant: self.frame.width).isActive = true
@@ -75,6 +74,10 @@ extension RecentSongHeader: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let height: CGFloat = (self.frame.height - 50) / 6
         return height
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 

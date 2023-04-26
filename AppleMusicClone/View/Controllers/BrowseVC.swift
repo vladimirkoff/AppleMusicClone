@@ -14,8 +14,16 @@ class BrowseVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureNav()
     }
     
     //MARK: - Helpers
+    
+    func configureNav() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.title = "Listen Now"
+        navigationController?.navigationBar.barStyle = .black
+        navigationController?.navigationBar.tintColor = .white
+    }
 }
 
