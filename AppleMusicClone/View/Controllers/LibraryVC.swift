@@ -63,6 +63,12 @@ class LibraryVC: UICollectionViewController {
         return header
     }
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc =  SongVC()
+        vc.modalPresentationStyle = .pageSheet
+        present(vc, animated: true)
+    }
+    
     //MARK: - Selectors
     
    @objc func editSelection() {

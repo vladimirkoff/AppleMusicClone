@@ -25,6 +25,7 @@
 		85BE5FD629F7F6C20052A281 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE5FD529F7F6C20052A281 /* Option.swift */; };
 		85BE5FD829F7FB170052A281 /* SongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE5FD729F7FB170052A281 /* SongVC.swift */; };
 		85BE5FDE29F7FF800052A281 /* miley-cyrus-flowers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 85BE5FDD29F7FF800052A281 /* miley-cyrus-flowers.mp3 */; };
+		85EA5C8429F91277007D5876 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA5C8329F91277007D5876 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		85BE5FD529F7F6C20052A281 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		85BE5FD729F7FB170052A281 /* SongVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongVC.swift; sourceTree = "<group>"; };
 		85BE5FDD29F7FF800052A281 /* miley-cyrus-flowers.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "miley-cyrus-flowers.mp3"; path = "../../../../Downloads/miley-cyrus-flowers.mp3"; sourceTree = "<group>"; };
+		85EA5C8329F91277007D5876 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		85143C7429F6C16100046154 /* AppleMusicClone */ = {
 			isa = PBXGroup;
 			children = (
+				85EA5C8229F9126F007D5876 /* Utilities */,
 				85BE5FDF29F809C00052A281 /* API */,
 				85143C8F29F6C1B100046154 /* ViewModel */,
 				85143C8E29F6C1AB00046154 /* View */,
@@ -141,6 +144,14 @@
 			children = (
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		85EA5C8229F9126F007D5876 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				85EA5C8329F91277007D5876 /* Extensions.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +236,7 @@
 				85BE5FCC29F7E8670052A281 /* LibraryVC.swift in Sources */,
 				85BE5FD629F7F6C20052A281 /* Option.swift in Sources */,
 				85143C7629F6C16100046154 /* AppDelegate.swift in Sources */,
+				85EA5C8429F91277007D5876 /* Extensions.swift in Sources */,
 				85143C9729F6C7A500046154 /* RecentSongCell.swift in Sources */,
 				85143C7829F6C16100046154 /* SceneDelegate.swift in Sources */,
 				85BE5FC829F7E7CD0052A281 /* InitialTabBarVC.swift in Sources */,
