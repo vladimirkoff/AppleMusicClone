@@ -155,9 +155,6 @@ class SongVC: UIViewController {
 
         Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateSlider), userInfo: nil, repeats: true)
         
-        
-
-        
     }
     
     //MARK: - Helpers

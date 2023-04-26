@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let scene = (scene as? UIWindowScene) else { return }
         
-        let initialVC = UINavigationController(rootViewController: InitialTabController(scene: scene))
+        let initialVC = InitialTabController(nibName: nil, bundle: nil)
         
         window = UIWindow(windowScene: scene)
         window?.rootViewController = initialVC

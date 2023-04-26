@@ -11,18 +11,9 @@ class InitialTabController: UITabBarController {
     
     //MARK: - Properties
     
-    var scene: UIScene?
+ 
     
     //MARK: - Lifecycle
-    
-    init(scene: UIScene) {
-        self.scene = scene
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -64,6 +55,7 @@ class InitialTabController: UITabBarController {
         
         tabBar.backgroundColor = UIColor(white: -5, alpha: 1)
         tabBar.tintColor = .red
+        
         tabBar.barStyle = .default
         tabBar.inputViewController?.hidesBottomBarWhenPushed = false
 
