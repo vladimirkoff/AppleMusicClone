@@ -19,13 +19,17 @@ class SearchVC: UIViewController, UISearchResultsUpdating {
     
     //MARK: - Properties
     
-    lazy var collectionView = UICollectionView(frame: CGRect(x: 0, y: 200, width: view.frame.width, height: view.frame.height - 280), collectionViewLayout: UICollectionViewFlowLayout())
+    lazy var collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: UICollectionViewFlowLayout())
     
     //MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureNav()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         configureCollectionView()
     }
     
@@ -48,8 +52,16 @@ class SearchVC: UIViewController, UISearchResultsUpdating {
     func configureCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.backgroundColor = .black
         view.addSubview(collectionView)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            collectionView.topAnchor.constraint(equalTo: navigationController!.navigationBar.bottomAnchor, constant: 0),
+            collectionView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0),
+            collectionView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0),
+            collectionView.heightAnchor.constraint(equalToConstant: view.frame.height)
+        ])
         
         collectionView.register(SearchCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         collectionView.register(SearchVCHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerReuseIdentifier)
@@ -84,7 +96,7 @@ extension SearchVC: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = CGSize(width: view.frame.width / 3 + 60, height: 120)
+        let size = CGSize(width: view.frame.width / 3 + 57, height: 120)
         return size
     }
 }
