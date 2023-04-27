@@ -32,7 +32,7 @@ class InitialTabController: UITabBarController {
         let libraryVC = LibraryVC(collectionViewLayout: UICollectionViewFlowLayout())
         let library = templateNavController(image: UIImage(systemName: "music.note.house.fill")!, rootVC: libraryVC)
         
-        let exploreVC = ExploreVC()
+        let exploreVC = ExploreVC(collectionViewLayout: UICollectionViewFlowLayout())
         let explore = templateNavController(image: UIImage(systemName: "play.circle.fill")!, rootVC: exploreVC)
         
         let browseVC = BrowseVC()

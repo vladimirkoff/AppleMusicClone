@@ -25,6 +25,7 @@
 		85BE5FD629F7F6C20052A281 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE5FD529F7F6C20052A281 /* Option.swift */; };
 		85BE5FD829F7FB170052A281 /* SongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE5FD729F7FB170052A281 /* SongVC.swift */; };
 		85BE5FDE29F7FF800052A281 /* miley-cyrus-flowers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 85BE5FDD29F7FF800052A281 /* miley-cyrus-flowers.mp3 */; };
+		85E00E1C29FA9CBF00661A55 /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E00E1B29FA9CBF00661A55 /* ExploreCell.swift */; };
 		85EA5C8429F91277007D5876 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA5C8329F91277007D5876 /* Extensions.swift */; };
 		85EA5C8829F92A62007D5876 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA5C8729F92A62007D5876 /* SearchCell.swift */; };
 		85EA5C8A29F92A7A007D5876 /* SearchVCHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA5C8929F92A7A007D5876 /* SearchVCHeader.swift */; };
@@ -51,6 +52,7 @@
 		85BE5FD529F7F6C20052A281 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		85BE5FD729F7FB170052A281 /* SongVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongVC.swift; sourceTree = "<group>"; };
 		85BE5FDD29F7FF800052A281 /* miley-cyrus-flowers.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "miley-cyrus-flowers.mp3"; path = "../../../../Downloads/miley-cyrus-flowers.mp3"; sourceTree = "<group>"; };
+		85E00E1B29FA9CBF00661A55 /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
 		85EA5C8329F91277007D5876 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		85EA5C8729F92A62007D5876 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		85EA5C8929F92A7A007D5876 /* SearchVCHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVCHeader.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				85143C9829F6DEDC00046154 /* OptionCell.swift */,
 				85EA5C8729F92A62007D5876 /* SearchCell.swift */,
 				85EA5C8929F92A7A007D5876 /* SearchVCHeader.swift */,
+				85E00E1B29FA9CBF00661A55 /* ExploreCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				85143C7829F6C16100046154 /* SceneDelegate.swift in Sources */,
 				85BE5FC829F7E7CD0052A281 /* InitialTabBarVC.swift in Sources */,
 				85BE5FD229F7E8970052A281 /* ExploreVC.swift in Sources */,
+				85E00E1C29FA9CBF00661A55 /* ExploreCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
